@@ -3,7 +3,7 @@ data:
     train_dataroot: "data/Brats_train"
     sample_dataroot: "data/Brats_test"
     image_size: 256
-    channels: 1
+    channels: 3
     logit_transform: false
     uniform_dequantization: false
     gaussian_dequantization: false
@@ -13,8 +13,8 @@ data:
 
 model:
     type: "sg"
-    in_channels: 2
-    out_ch: 1
+    in_channels: 6
+    out_ch: 3
     ch: 128
     ch_mult: [1, 1, 2, 2, 4, 4]
     num_res_blocks: 2
